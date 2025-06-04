@@ -14,15 +14,29 @@ public class Class06MayorTresNumeros {
         dato = teclado.nextLine();
         int num3 = Integer.parseInt(dato);
         int mayor = 0;
+        int menor = 0;
+        int intermedio = 0;
         //PREGUNTAMOS POR LAS CONDICIONES
         //22 , 88, 244
-        if (num1 > num2 && num1 > num3){
+        if (num1 >= num2 && num1 >= num3){
            mayor = num1;
-        }else if (num2 > num1 && num2 > num3){
+        }else if (num2 >= num1 && num2 >= num3){
             mayor = num2;
         }else {
             mayor = num3;
         }
+        if (num1 <= num2 && num1 <= num3){
+            menor = num1;
+        }else if (num2 <= num1 && num2 <= num3){
+            menor = num2;
+        }else{
+            menor = num3;
+        }
+        //sumamos todos los numeros
+        int suma = num1 + num2 + num3;
+        intermedio = suma - mayor - menor;
+        System.out.println("El número menor es " + menor);
         System.out.println("El número mayor es " + mayor);
+        System.out.println("El número intermedio es " + intermedio);
    } 
 }
