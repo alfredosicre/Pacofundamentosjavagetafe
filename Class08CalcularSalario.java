@@ -58,6 +58,6 @@ public class Class08CalcularSalario {
         System.out.println("Salario extra: " + salarioExtra);
         System.out.println("Iva (16%): " + iva);
         System.out.println("-------------------------");
-        System.out.println("Salario final: " + (salario + iva));
+        System.out.println("Salario final: " + (salario - iva));
     }
 }
