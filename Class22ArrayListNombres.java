@@ -11,6 +11,9 @@ public class Class22ArrayListNombres {
             System.out.println("Introduzca un nombre");
             nombre = teclado.nextLine();
             coleccionNombres.add(nombre);
+            if (coleccionNombres.indexOf("Algo") != -1){
+                //repetido
+            }
             System.out.println("Nombres almacenados: " 
                 + coleccionNombres.size());
         }
