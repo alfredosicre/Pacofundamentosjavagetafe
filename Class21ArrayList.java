@@ -3,6 +3,8 @@ import java.util.ArrayList;
 
 public class Class21ArrayList {
     public static void main(String[] args) {
+        ArrayList<Integer> coleccionNumeros = new ArrayList<Integer>();
+
         ArrayList<String> coleccion = new ArrayList<String>();
         //AGREGAMOS CUATRO ELEMENTOS y UNO REPETIDO
         coleccion.add("Elemento 1");
@@ -31,7 +33,13 @@ public class Class21ArrayList {
             //RECUPERAMOS CADA ELEMENTO DE LA COLECCION
             String elemento = coleccion.get(i);
             System.out.println(elemento);
+            // coleccion.add("Nuevo elemento");
         }
+        //SINTAXIS DE BUCLES POR REFERENCIA
+        //for (Tipo variable: CONJUNTO)
+        // for (String elemento : coleccion){
+        //     System.out.println(elemento);
+        // }
         //ELIMINAR TODA LA COLECCION
         coleccion.clear();
         System.out.println("Número de elementos: " + coleccion.size());
